@@ -1,0 +1,87 @@
+:root {
+  font-family: 'Segoe UI', Roboto, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #1e293b; /* dark slate */
+  background-color: #f0f4f8; /* light slate-blue background */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #2563eb; /* blue-600 */
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #1e40af; /* blue-800 */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  align-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+}
+
+/* Headings */
+h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  color: #0f172a; /* slate-900 */
+  margin: 0;
+}
+
+/* Buttons */
+button {
+  border-radius: 10px;
+  border: 2px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: inherit;
+  background-color: #3b82f6; /* blue-500 */
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+button:hover {
+  background-color: #2563eb; /* blue-600 */
+  border-color: #1d4ed8;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 3px dashed #93c5fd; /* blue-300 */
+  outline-offset: 3px;
+}
+
+/* Responsive media prefers light theme */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #1e293b;
+    background-color: #f8fafc; /* light gray */
+  }
+
+  a:hover {
+    color: #1d4ed8;
+  }
+
+  button {
+    background-color: #3b82f6;
+    color: white;
+  }
+}
